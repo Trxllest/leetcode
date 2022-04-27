@@ -42,3 +42,4 @@ class Solution:
                 nums.append(num)
         nums.append(num)
         return max(nums)
+    

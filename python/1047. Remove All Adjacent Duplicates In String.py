@@ -24,8 +24,8 @@ class Solution:
         for ch in s:
             if stack and ch == stack[-1]:
                 stack.pop()
-                continue
-            stack.append(ch)
+            else:
+                stack.append(ch)
         return "".join(stack)
 
 t1 = Solution()

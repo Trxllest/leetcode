@@ -16,17 +16,16 @@ Output: "ay"
 '''
 
 class Solution:
-    def __str__(self) -> str:
-        pass
-    
     def removeDuplicates(self, s: str) -> str:
         stack = []
-        for ch in s:
-            if stack and ch == stack[-1]:
+        for i in range(len(s)):
+            if stack and s[i] == stack[-1]:
                 stack.pop()
-                continue
-            stack.append(ch)
+                #continue
+            else:
+                stack.append(s[i])
         return "".join(stack)
+
 
 t1 = Solution()
 x = t1.removeDuplicates("azxxzy")

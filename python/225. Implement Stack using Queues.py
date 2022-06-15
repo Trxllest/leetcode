@@ -13,10 +13,7 @@ class MyStack:
         return self.stack[-1]
 
     def empty(self) -> bool:
-        if not self.stack:
-            return True
-        else:
-            return False
+        return True if not self.stack else False
 
 
 # Your MyStack object will be instantiated and called as such:

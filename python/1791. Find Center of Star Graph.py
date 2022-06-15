@@ -10,10 +10,8 @@ indicates that there is an edge between the nodes ui and vi. Return the center o
 """
 
 class Solution:
-    def findCenter(self, edges):
+    def findCenter(self, edges: List[List[int]]) -> int:
         x,y = edges[0][0],edges[0][1]
-        if x==edges[1][0] or x ==edges[1][1]:
-            return x
-        return y
+        return x if (x==edges[1][0] or x ==edges[1][1]) else y
 
       

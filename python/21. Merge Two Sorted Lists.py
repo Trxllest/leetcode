@@ -10,8 +10,8 @@ class Solution(object):
         :type list2: Optional[ListNode]
         :rtype: Optional[ListNode]
         """
-        merged = ListNode()
-        curr = merged
+        mergedList = ListNode()
+        curr = mergedList
         while list1 and list2:
             if list1.val < list2.val:
                 curr.next = list1
@@ -25,4 +25,4 @@ class Solution(object):
             curr.next = list1
         elif list2:
             curr.next = list2
-        return merged.next
+        return mergedList.next

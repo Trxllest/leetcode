@@ -13,6 +13,5 @@ class Solution(object):
         count = 0
         if not root:
             return 0
-        else:
-            return (max(self.maxDepth(root.left),self.maxDepth(root.right))+1)
+        return (max(self.maxDepth(root.left),self.maxDepth(root.right))+1)
         

@@ -8,7 +8,7 @@ class Solution(object):
         len_nums = len(nums)
         left = 0
         right = len_nums-1
-        middle = (left + right)//2
+        middle = (left + right)//2 #other languages this can cause an error for large inputs (left+((right-left)//2)) fixes this
         while left <= right:
             middle = (left + right)//2
             if nums[middle] == target:
